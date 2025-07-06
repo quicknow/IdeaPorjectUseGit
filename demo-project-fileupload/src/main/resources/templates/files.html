@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文件下载</title>
+</head>
+<body>
+<h1>已上传的文件</h1>
+
+<!-- 文件下载列表 -->
+<ul>
+    <li th:each="fileName : ${fileNames}">
+        <a th:href="@{'/download/' + ${fileName}}" th:text="${fileName}"></a>
+    </li>
+</ul>
+
+<!-- 返回首页 -->
+<a href="/">返回首页</a>
+
+</body>
+</html>

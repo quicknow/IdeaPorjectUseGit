@@ -1,0 +1,21 @@
+gitignore
+# 通用忽略规则
+.idea/
+*.iml
+target/
+build/
+*.log
+*.bak
+*.tmp
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 忽略每个项目的编译输出
+**/target/
+**/build/
+**/out/
+
+# 忽略本地配置文件
+**/application-local.properties

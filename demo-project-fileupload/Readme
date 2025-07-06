@@ -1,0 +1,19 @@
+一、主页：
+http://ip:8080/
+1.可选择需要上传的文件
+2.点击查看已上传的文件并点击相应的文件下载
+
+二、在linux客户端上实现上传与下载：
+
+1.上传：
+curl -X POST -F "file=@xxx.txt" http://ip:8080/upload
+
+2.下载：
+curl -o xxx.txt http://ip:8080/download/xxx.txt
+
+三、注意事项：
+上传的文件名称不要使用中文名
+
+
+
+
